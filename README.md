@@ -4,7 +4,7 @@ This is a visual puzzle solver for [Smartgames "Airport" puzzle.](http://www.sma
 In this puzzle you are given a card with a 4x4 map showing the designated positions for the planes.
 To solve the puzzle you have to place the 6 playing pieces on top the challenge card so that the planes
 are in their designated positions and flying in the right directions.
-![test](http://cdn2.smartgames.eu/sites/default/files/styles/medium/public/gamerules/airportSTEP_2.jpg?itok=wjkJFUT2)
+![Puzzle](http://cdn2.smartgames.eu/sites/default/files/styles/medium/public/gamerules/airportSTEP_2.jpg?itok=wjkJFUT2)
 
 This project tries to solve the puzzle by visually analysing the image of the card,
 figuring out the planes designated positions and other constraints and finding the solution in the entire solution space.
@@ -42,12 +42,12 @@ TODO
 
 1.  Given an image frame from the camera, we first find the card's position in the image.
 
-    ![](https://i.imgur.com/4MYaATp.jpg)
+    ![Step 1](https://i.imgur.com/4MYaATp.jpg)
 
 
 2.  Next, we divide the 4x4 grid into 16 black and white images.
 
-    ![](https://i.imgur.com/SofbtJl.png)
+    ![Step 2](https://i.imgur.com/SofbtJl.png)
 
 
 3.  We use template matching to find the objects in these squares, specifically, planes with different orientations and local constraints.
@@ -65,6 +65,6 @@ TODO
 
 4.  We search for a solution by looking it up in the solutions database. Finally, we show the solution to the user.
 
-    ![](https://i.imgur.com/rH8AIjU.png)
+    ![Step 4](https://i.imgur.com/rH8AIjU.png)
 
 
