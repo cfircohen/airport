@@ -10,6 +10,9 @@ This project tries to solve the puzzle by visually analysing the image of the ca
 figuring out the planes designated positions and other constraints and finding the solution in the entire solution space.
 Once found, the solution is displayed on the screen.
 
+# Disclaimer
+This is not an official Google product
+
 # Setup
 TODO
 
