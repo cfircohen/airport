@@ -6,21 +6,28 @@ To solve the puzzle you have to place the 6 playing pieces on top the challenge 
 are in their designated positions and flying in the right directions.
 ![Puzzle](http://cdn2.smartgames.eu/sites/default/files/styles/medium/public/gamerules/airportSTEP_2.jpg?itok=wjkJFUT2)
 
-This project tries to solve the puzzle by visually analysing the image of the card,
+This project tries to solve the puzzle by visually analyzing the image of the card,
 figuring out the planes designated positions and other constraints and finding the solution in the entire solution space.
 Once found, the solution is displayed on the screen.
 
-# Disclaimer
-This is not an official Google product
 
 # Setup
-TODO
+We hooked a simple [USB camera](http://www.dx.com/p/no-drive-mini-usb-camera-for-raspberry-pi-black-408731) onto a cool rig we built from [plastic straws](http://www.amazon.com/Welecom-Plastic-Straw-Building-Blocks/dp/B01ASICG78):
+
+![Setup](https://i.imgur.com/W2PP0dv.png)
+
+Software dependencies:
+
+* [numpy](https://pypi.python.org/pypi/numpy)
+* [open cv2](http://opencv.org/)
+* [enum34](https://pypi.python.org/pypi/enum34)
+* [webcolors](https://pypi.python.org/pypi/webcolors)
 
 # How does it work?
 0.  In a preprocessing step we find ALL possible solutions. We try all the different ways to cover a 4x4 grid with the given pieces.
     When we succeed we store the solution in a database file for later retrieval.
 
-    Fun fact, there are 18,432 solutions to this puzzle (which are actually 4,608 unique solutions).
+    Fun fact: there are 18,432 solutions to this puzzle (which are actually 4,608 unique solutions).
 
     See `solutions.py` for more details. Here, for example, are two solutions from the database:
 
@@ -71,3 +78,5 @@ TODO
     ![Step 4](https://i.imgur.com/rH8AIjU.png)
 
 
+# Disclaimer
+This is not an official Google product (experimental or otherwise), it is just code that happens to be owned by Google.
